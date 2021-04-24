@@ -18,14 +18,14 @@ const clearSrOnlyCSS: string = [
   "margin: 0;",
   "overflow: visible;",
   "clip: auto;",
-  "white-space: normal",
+  "white-space: normal;",
 ].join("\n");
 
 interface ScreenReaderSettings {
   reset?: boolean;
   showOnFocus?: boolean;
 }
-export const screenReader = (
+export const screenReaderOnly = (
   config: ScreenReaderSettings = { reset: false, showOnFocus: false }
 ): string => {
   if (config.reset) {
@@ -36,4 +36,4 @@ export const screenReader = (
   );
 };
 
-export default screenReader;
+export default screenReaderOnly;

@@ -1,4 +1,4 @@
-import type {Breakpoints} from './types'
+import type {Breakpoints} from '../types'
 const defaultBreakpoints: Breakpoints = {
   sm: 640,
   md: 768,

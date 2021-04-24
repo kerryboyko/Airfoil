@@ -1,4 +1,4 @@
-import type {RingSettings, RingSettingsStrict} from './types'
+import type {RingSettings, RingSettingsStrict} from '../types'
 
 const defaultRingSettings: RingSettingsStrict = {
   inset: `0`,
@@ -19,7 +19,7 @@ const stringifyRingSettings = (
   return clone as RingSettingsStrict;
 };
 
-const ring = (settings: Partial<RingSettings>) => {
+const ring = (settings: Partial<RingSettings> = defaultRingSettings) => {
   const { inset, color, size } = stringifyRingSettings(settings);
   return `box-shadow: ${inset} 0 0 0 ${size} ${color};`;
 };
