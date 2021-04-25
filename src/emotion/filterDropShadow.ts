@@ -63,8 +63,8 @@ const customShadow = (intensity: number): string => {
   const blurs = [3, 2].map((v) => v * intensity);
   const alphas = [0.05, 0.04].map((v) => v * Math.sqrt(intensity));
   return (
-    `${hOffset[0]} ${vOffsets[0]} ${blurs[0]} rgba(0, 0, 0, ${alphas[0]}) ` +
-    `${hOffset[1]} ${vOffsets[1]} ${blurs[1]} rgba(0, 0, 0, ${alphas[1]})`
+    `${hOffset[0]}px ${vOffsets[0]}px ${blurs[0]}px rgba(0, 0, 0, ${alphas[0]}) ` +
+    `${hOffset[1]}px ${vOffsets[1]}px ${blurs[1]}px rgba(0, 0, 0, ${alphas[1]})`
   );
 };
 
