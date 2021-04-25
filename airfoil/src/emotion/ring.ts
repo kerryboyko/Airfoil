@@ -21,7 +21,7 @@ const stringifyRingSettings = (
 
 const ring = (settings: Partial<RingSettings> = defaultRingSettings) => {
   const { inset, color, size } = stringifyRingSettings(settings);
-  return `box-shadow: ${inset} 0 0 0 ${size} ${color};`;
+  return `box-shadow: ${inset} 0 0 ${size} ${color}`;
 };
 
 export default ring;
